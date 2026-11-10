@@ -96,3 +96,21 @@ para o distribuidor (`ir.ticapromos.com.br/<slug>`), nunca para convite fixo.
 Exemplos: `/links/?o=bio`, `/links/?d=bebidas&o=story-bebidas`.
 Para adicionar um grupo, incluir o item em `GRUPOS` no script da página (o slug
 precisa existir em `dados/tsp/grupos-links.json`).
+
+## Landing simplificada (`lp/`) — teste de nov/2026
+
+Versão enxuta da landing geral (topo, Tico, título, um botão e cinco vantagens,
+com o alerta de preço com IA em primeiro), no formato que o gestor de tráfego usa
+com outros clientes. Convive com a landing completa (`/`), que continua ativa.
+No computador, abre em duas colunas (texto e botão à esquerda, Tico à direita)
+com as vantagens em grade embaixo.
+
+| Página | Slug do distribuidor | Origem padrão |
+|---|---|---|
+| `lp/` | `geral` | `lp-geral` |
+
+- `?o=` / `utm_source` funcionam igual às outras landings; sem eles, a origem
+  `lp-geral` separa o tráfego do teste em `grupos-links.json`.
+- Evento no `dataLayer`: `clique_whatsapp_grupo {nicho, local, origem}` (nome do
+  template do gestor de tráfego).
+- Nichos ainda não têm versão simplificada.

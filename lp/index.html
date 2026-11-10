@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSXGHM5P');</script>
+<!-- End Google Tag Manager -->
+<!-- Landing simplificada (lp/). Gerada a partir de um modelo único: ao mudar o
+     visual, mudar nas quatro (geral, bebidas, babykids, ferramentas). -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tica Promos | O Tico acha, você economiza</title>
+<meta name="description" content="O Tico voa o dia inteiro atrás de preço. O que ele tica cai no seu WhatsApp, de graça.">
+<meta name="theme-color" content="#12141C">
+<meta property="og:title" content="Tica Promos | O Tico acha, você economiza">
+<meta property="og:description" content="O Tico acha, você economiza. Grupo de ofertas gratuito no WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://grupos.ticapromos.com.br/imgs/tico-og.png">
+<link rel="icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@400;600;700;800;900&display=swap">
+
+<style>
+:root{
+  /* mesma paleta e fontes das landings completas (index.html) */
+  --bg:#12141c;
+  --bg2:#1a1d29;
+  --navy:#2e3348;
+  --line:rgba(255,255,255,.09);
+  --text:#fff;
+  --muted:rgba(255,255,255,.62);
+  --orange:#fa5150;
+  --dark-orange:#d93636;
+  --green:#25d366;
+  --display:"Bebas Neue",Impact,"Arial Narrow",sans-serif;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:560px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+
+/* ===== ícones caindo no fundo ===== */
+#rain{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+#rain svg{position:absolute;top:-60px;color:var(--orange);opacity:0;animation:fall linear infinite}
+@keyframes fall{
+  0%{transform:translateY(0) rotate(0deg);opacity:0}
+  12%{opacity:var(--o)}
+  70%{opacity:var(--o)}
+  100%{transform:translateY(110vh) rotate(var(--r));opacity:0}
+}
+
+/* ===== topo ===== */
+.top{position:relative;z-index:2;border-bottom:1px solid var(--line);background:rgba(18,20,28,.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.top .wrap{display:flex;align-items:center;justify-content:center;gap:10px;padding-block:16px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-size:1.6rem;letter-spacing:1.5px;line-height:1;font-weight:400}
+.brand b{color:var(--orange);font-weight:700}
+.brand em{font-style:normal;color:var(--muted)}
+.brand img{width:30px;height:30px;object-fit:contain;border-radius:7px}
+
+main,footer,.perks{position:relative;z-index:1}
+
+/* ===== hero ===== */
+.hero{text-align:center;padding-block:44px 40px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10.5px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.42);font-weight:700;margin:0 0 30px}
+.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--orange)}
+
+.ball{position:relative;width:min(72vw,280px);aspect-ratio:1;margin:0 auto 34px;max-width:100%}
+.ball::before{content:"";position:absolute;inset:-16px;border-radius:50%;background:radial-gradient(circle,rgba(250,81,80,.22),rgba(250,81,80,0) 70%);animation:glow 3.2s ease-in-out infinite}
+.ball .disc{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle at 50% 35%,var(--navy),var(--bg) 70%);border:3px solid var(--orange);box-shadow:0 0 0 10px rgba(250,81,80,.07),0 20px 50px -20px rgba(250,81,80,.5);display:grid;place-items:center;overflow:hidden}
+.ball .disc img{width:58%;height:58%;object-fit:contain;border-radius:22%;box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
+.sticker{position:absolute;right:-14px;bottom:18px;transform:rotate(-6deg);display:inline-flex;align-items:center;gap:6px;background:linear-gradient(90deg,var(--dark-orange),var(--orange));color:#fff;font-weight:800;font-size:.78rem;text-transform:uppercase;letter-spacing:.5px;padding:7px 12px;border-radius:5px;box-shadow:0 6px 16px -6px rgba(0,0,0,.6);white-space:nowrap}
+.sticker svg{width:15px;height:15px}
+
+h1{font-family:var(--display);font-weight:400;font-size:clamp(2.8rem,13vw,4.4rem);line-height:.92;letter-spacing:2px;text-transform:uppercase;margin:0 0 16px;text-wrap:balance}
+h1 span{color:var(--orange);text-shadow:0 0 28px var(--orange),0 0 64px var(--dark-orange)}
+.sub{color:rgba(255,255,255,.7);font-weight:600;font-size:1rem;max-width:34ch;margin:0 auto 22px;text-wrap:balance}
+
+.live{display:inline-flex;align-items:center;gap:9px;padding:8px 15px 8px 12px;border:1px solid var(--line);background:var(--bg2);border-radius:999px;font-size:.85rem;color:var(--muted);margin-bottom:18px;white-space:nowrap;max-width:100%}
+.live b{color:var(--text)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--green);animation:pulse 1.8s infinite;flex:none}
+
+/* botão igual ao das landings completas (.btn-wpp) */
+.cta{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;max-width:440px;margin:0 auto;padding:20px 16px;border-radius:18px;
+  background:linear-gradient(135deg,#25d366,#128c7e);color:#fff;font-family:var(--body);font-weight:900;font-size:clamp(14px,4vw,19px);line-height:1.25;white-space:nowrap;text-align:center;
+  box-shadow:0 10px 36px rgba(37,211,102,.38);transition:transform .2s,box-shadow .2s}
+.cta:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 14px 44px rgba(37,211,102,.55)}
+.cta:active{transform:scale(.97)}
+.cta:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.cta img{width:28px;height:28px;object-fit:contain;flex:none}
+
+.note{display:flex;justify-content:center;align-items:center;gap:8px;flex-wrap:wrap;margin:16px 0 0;font-size:.84rem;color:var(--muted)}
+.note svg{width:17px;height:17px;color:var(--green)}
+.tag{display:inline-flex;align-items:center;gap:8px;margin-top:26px;font-size:.9rem;color:var(--muted)}
+.tag svg{width:17px;height:17px;color:var(--orange)}
+
+/* ===== benefícios ===== */
+.perks{border-top:1px solid var(--line);background:rgba(26,29,41,.9)}
+.perks ul{list-style:none;margin:0;padding:34px 0;display:grid;gap:26px}
+.perks li{display:grid;grid-template-columns:40px 1fr;gap:16px;align-items:start}
+.perks li > svg{width:30px;height:30px;color:var(--orange);margin-top:2px}
+.perks h2{font-size:1.08rem;font-weight:800;margin:0 0 2px}
+.perks p{margin:0;color:var(--muted);font-size:.95rem;font-weight:600}
+
+footer{border-top:1px solid var(--line);background:var(--bg);text-align:center;padding-block:26px calc(28px + env(safe-area-inset-bottom,0px))}
+footer .n{font-family:var(--display);color:var(--muted);font-size:1.3rem;letter-spacing:1.5px}
+footer .n b{color:var(--orange)}
+footer small{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
+
+/* ===== confirmação de idade (só bebidas) ===== */
+.idade{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;padding:24px;background:rgba(8,9,13,.78);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.idade.aberta{display:flex}
+.idade-caixa{width:100%;max-width:380px;background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:26px 22px 18px;text-align:center}
+.idade-caixa img{border-radius:18px;margin-bottom:10px}
+.idade-caixa h3{font-family:var(--display);font-weight:400;font-size:2rem;letter-spacing:1px;line-height:1;margin:0 0 8px}
+.idade-caixa p{color:var(--muted);margin:0 0 20px;font-size:.95rem}
+.idade-nao{margin-top:14px;background:none;border:0;color:var(--muted);font:inherit;font-size:.9rem;text-decoration:underline;cursor:pointer;padding:6px}
+
+/* entrada */
+.in{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.05s}.d2{animation-delay:.15s}.d3{animation-delay:.25s}.d4{animation-delay:.35s}.d5{animation-delay:.45s}
+@keyframes rise{from{transform:translateY(14px)}to{transform:none}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,.55)}70%{box-shadow:0 0 0 9px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+@keyframes glow{50%{transform:scale(1.06);opacity:.7}}
+/* ===== computador: duas colunas e vantagens em grade ===== */
+@media (min-width:960px){
+  .wrap{max-width:1160px;padding-left:48px;padding-right:48px}
+  .top .wrap{justify-content:flex-start}
+  .hero{text-align:left;padding-block:72px 80px}
+  .hero .wrap{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);column-gap:64px;align-items:center;
+    grid-template-areas:"eyebrow ball" "h1 ball" "sub ball" "acao ball" "tag ball"}
+  .eyebrow{grid-area:eyebrow;justify-self:start;margin-bottom:22px}
+  .ball{grid-area:ball;width:400px;margin:0;justify-self:center}
+  .sticker{font-size:.95rem;padding:9px 15px;right:-6px;bottom:34px}
+  h1{grid-area:h1;font-size:clamp(4.6rem,6.4vw,6.4rem)}
+  .sub{grid-area:sub;margin:0 0 26px;max-width:46ch;font-size:1.15rem}
+  .hero .acao{grid-area:acao}
+  .live{margin-bottom:20px}
+  .cta{margin:0;max-width:460px}
+  .note{justify-content:flex-start;max-width:460px}
+  .tag{grid-area:tag;justify-self:start}
+  .perks ul{grid-template-columns:repeat(3,minmax(0,1fr));gap:40px 32px;padding:56px 0;align-items:start}
+  .perks li{grid-template-columns:1fr;gap:12px;align-content:start}
+  footer{text-align:center}
+}
+@media (min-width:1100px){
+  .perks ul{grid-template-columns:repeat(5,minmax(0,1fr));gap:32px 28px}
+  footer .wrap{max-width:720px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}#rain{display:none}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WSXGHM5P"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div id="rain" aria-hidden="true"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 1 1-4.1 14.9l-.3-.2-2.8.7.8-2.7-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.2c-.2 0-.5 0-.7.3-.3.3-.9.9-.9 2.2s1 2.6 1.1 2.8c.1.2 1.9 3 4.7 4.1 2.3.9 2.8.7 3.3.7.5-.1 1.6-.7 1.8-1.3.2-.6.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3l-1.9-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.6.1-.3-.1-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5l-.9-2c-.2-.5-.4-.4-.6-.4h-.5Z"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.6 11.4a1.5 1.5 0 0 0 1.5 1.1h8.6a1.5 1.5 0 0 0 1.5-1.1L21 7H6"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r="1.5"/></symbol>
+    <symbol id="i-pig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9.5c1.1 0 2 .9 2 2v1a1 1 0 0 1-1 1h-.8a7 7 0 0 1-2.2 2.9V19a1 1 0 0 1-1 1h-1.5a1 1 0 0 1-1-1v-.6a8 8 0 0 1-3 0V19a1 1 0 0 1-1 1H8a1 1 0 0 1-1-1v-2.4A6.5 6.5 0 0 1 4 11a6.5 6.5 0 0 1 6.5-6.5h3A6.5 6.5 0 0 1 19 9.5Z"/><path d="M16 4.5V2l-3 2.5"/><circle cx="15.5" cy="10" r=".6" fill="currentColor"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14l-1 13H6L5 7Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v8a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-8M7.5 8a2.5 2.5 0 0 1 0-5C10 3 12 8 12 8s2-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-pct" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5V8Z"/><path d="m3 8 9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-garrafa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4v4l1.5 2.5A3 3 0 0 1 16 10v10a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V10a3 3 0 0 1 .5-1.5L10 6V2Z"/><path d="M8 13h8"/></symbol>
+    <symbol id="i-taca" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h10l-1 6a4 4 0 0 1-8 0L7 3Z"/><path d="M12 13v7M8 21h8"/></symbol>
+    <symbol id="i-copo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h14l-1.6 15a2 2 0 0 1-2 1.8H8.6a2 2 0 0 1-2-1.8L5 4Z"/><path d="M5.6 9h12.8"/></symbol>
+    <symbol id="i-filtro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18l-7 8v6l-4 2v-8L3 4Z"/></symbol>
+    <symbol id="i-mamadeira" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2h4M9 5h6l-.5 2H9.5L9 5Z"/><rect x="7" y="7" width="10" height="15" rx="3"/><path d="M7 12h3M7 16h3"/></symbol>
+    <symbol id="i-urso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6.5" cy="6" r="2.5"/><circle cx="17.5" cy="6" r="2.5"/><circle cx="12" cy="13" r="7"/><circle cx="9.5" cy="12" r=".6" fill="currentColor"/><circle cx="14.5" cy="12" r=".6" fill="currentColor"/><path d="M10.5 16c.9.7 2.1.7 3 0"/></symbol>
+    <symbol id="i-bloco" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="12" width="9" height="9" rx="1"/><rect x="12" y="12" width="9" height="9" rx="1"/><rect x="7.5" y="3" width="9" height="9" rx="1"/></symbol>
+    <symbol id="i-ticket" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8a2 2 0 0 0 0 4v0a2 2 0 0 1 0 4v2h18v-2a2 2 0 0 1 0-4 2 2 0 0 1 0-4V6H3v2Z"/><path d="M14 6v12" stroke-dasharray="2 2"/></symbol>
+    <symbol id="i-coracao" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></symbol>
+    <symbol id="i-sino" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></symbol>
+    <symbol id="i-chave" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 13l-8 8-3-3 6.3-6.3"/><path d="M14.7 6.3 9 12l-6 6 3 3 6-6"/><path d="M14.7 6.3a4 4 0 0 1 5-3.3l-2.5 2.5.3 2.5 2.5.3L22.5 5.8"/></symbol>
+    <symbol id="i-martelo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12 5 22l-3-3 10-10"/><path d="m11 6 4-4 7 7-4 4-3-3-2 2-4-4 2-2Z"/></symbol>
+    <symbol id="i-medalha" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="m9 14.5-1.5 7.5 4.5-2.5 4.5 2.5-1.5-7.5"/><path d="m9.5 9 1.7 1.7L14.5 7.5"/></symbol>
+    <symbol id="i-raio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+    <symbol id="i-regua" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="8" rx="1"/><path d="M6 8v3M10 8v4M14 8v3M18 8v4"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <img src="/imgs/tico.png" alt="">
+      <span>Tica <b>Promos</b></span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow in d1"><i></i>Grupo de ofertas no WhatsApp</p>
+
+      <div class="ball in d2">
+        <div class="disc"><img src="/imgs/tico.png" alt="Tico, mascote da Tica Promos" onerror="this.onerror=null;this.src='/imgs/tico.png'"></div>
+        <span class="sticker"><svg aria-hidden="true"><use href="#i-tag"/></svg>o Tico achou!</span>
+      </div>
+
+      <h1 class="in d3">O Tico acha.<br><span>Você economiza.</span></h1>
+      <p class="sub in d3">O Tico voa o dia inteiro atrás de preço. O que ele tica cai no seu WhatsApp, de graça.</p>
+
+      <div class="acao in d4">
+        <div class="live"><span class="dot" aria-hidden="true"></span><span><b>Ofertas novas</b> todos os dias</span></div>
+        <!-- O destino é montado no script do fim: ir.ticapromos.com.br/geral?o=<origem> -->
+        <a class="cta js-cta" data-local="hero" href="https://ir.ticapromos.com.br/geral" target="_blank" rel="noopener">
+          <img src="/imgs/whatsapp.png" alt="" width="28" height="28">
+          <span>Entrar no grupo do WhatsApp</span>
+        </a>
+        <p class="note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m8 12 3 3 5-6"/></svg>
+          Grupo gratuito <span aria-hidden="true">·</span> Saia quando quiser
+        </p>
+      </div>
+
+      <p class="tag in d5"><svg aria-hidden="true"><use href="#i-pct"/></svg>Preço bom não espera.</p>
+    </div>
+  </section>
+</main>
+
+<section class="perks" aria-label="O que você recebe">
+  <div class="wrap">
+    <ul>
+      <li><svg aria-hidden="true"><use href="#i-sino"/></svg><div><h2>Alerta de preço com IA</h2><p>Marque o produto que você quer e o preço que topa pagar. A IA do Tico monitora e te chama no privado quando chegar.</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-cart"/></svg><div><h2>Achado na hora</h2><p>O Tico achou, o grupo recebe na mesma hora.</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-box"/></svg><div><h2>De tudo um pouco</h2><p>Eletrônicos, casa, ferramentas, bebidas e moda. Ele escolhe pelo preço.</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-pig"/></svg><div><h2>Ele também reprova</h2><p>Se o preço não vale a pena, o Tico avisa e passa reto.</p></div></li>
+      <li><svg aria-hidden="true"><use href="#i-gift"/></svg><div><h2>Grátis, e continua</h2><p>Sem assinatura, sem plano pago. Saia quando quiser.</p></div></li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span class="n">Tica <b>Promos</b></span>
+    <small>Preços e estoque podem mudar. Os links do grupo são links de afiliado.<br>© 2026 Tica Promos</small>
+  </div>
+</footer>
+
+<script>
+/* ===== CONFIGURAÇÃO ===== */
+var NICHO = 'geral';
+var DESTINO = 'https://ir.ticapromos.com.br/geral';   // distribuidor: rodízio, censo e atribuição
+var ORIGEM_PADRAO = 'lp-geral';                       // separa o teste das landings antigas
+var PEDE_IDADE = false;
+var ICONES_CHUVA = ["i-cart", "i-tag", "i-pig", "i-card", "i-bag", "i-gift", "i-pct", "i-box"];
+var QTD_ICONES = 16;
+/* ======================== */
+
+(function(){
+  var params = new URLSearchParams(location.search);
+  var origem = (params.get('o') || params.get('utm_source') || ORIGEM_PADRAO)
+                 .toLowerCase().slice(0, 40).replace(/[^\w.\-]/g, '') || ORIGEM_PADRAO;
+  var destino = DESTINO + '?o=' + encodeURIComponent(origem);
+  var links = document.querySelectorAll('.js-cta, #idade-sim');
+  for (var i=0;i<links.length;i++) links[i].href = destino;
+
+  function registrar(local){
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({event:'clique_whatsapp_grupo', nicho:NICHO, local:local, origem:origem});
+  }
+
+  var confirmou = !PEDE_IDADE;
+  try { if (PEDE_IDADE && sessionStorage.getItem('tsp-18') === '1') confirmou = true; } catch(e){}
+  var caixa = document.getElementById('idade'), ultimoFoco = null;
+
+  var ctas = document.querySelectorAll('.js-cta');
+  for (var j=0;j<ctas.length;j++){
+    ctas[j].addEventListener('click', function(ev){
+      var local = this.getAttribute('data-local') || 'hero';
+      if (confirmou) { registrar(local); return; }
+      ev.preventDefault();
+      ultimoFoco = this;
+      caixa.classList.add('aberta');
+      document.getElementById('idade-sim').focus();
+    });
+  }
+
+  if (caixa) {
+    var fechar = function(){ caixa.classList.remove('aberta'); if (ultimoFoco) ultimoFoco.focus(); };
+    // O "sim" é um link de verdade: o navegador abre o WhatsApp sem tratar como popup.
+    document.getElementById('idade-sim').addEventListener('click', function(){
+      confirmou = true;
+      try { sessionStorage.setItem('tsp-18', '1'); } catch(e){}
+      registrar('idade');
+      caixa.classList.remove('aberta');
+    });
+    document.getElementById('idade-nao').addEventListener('click', function(){
+      if (this.getAttribute('data-fim')) { fechar(); return; }
+      caixa.querySelector('h3').textContent = 'Então esse grupo não é para você';
+      caixa.querySelector('p').textContent = 'Ele divulga bebida alcoólica e é só para maiores de 18 anos.';
+      document.getElementById('idade-sim').style.display = 'none';
+      this.textContent = 'Fechar';
+      this.setAttribute('data-fim', '1');
+    });
+    caixa.addEventListener('click', function(e){ if (e.target === caixa) fechar(); });
+    document.addEventListener('keydown', function(e){ if (e.key === 'Escape') fechar(); });
+  }
+
+  var rain = document.getElementById('rain');
+  var ns = 'http://www.w3.org/2000/svg';
+  for (var k=0;k<QTD_ICONES;k++){
+    var s = document.createElementNS(ns,'svg'), u = document.createElementNS(ns,'use');
+    u.setAttribute('href','#'+ICONES_CHUVA[k%ICONES_CHUVA.length]); s.appendChild(u);
+    var size = 18 + Math.random()*22, dur = 9 + Math.random()*9;
+    s.setAttribute('width',size); s.setAttribute('height',size);
+    s.style.left = (Math.random()*96)+'%';
+    s.style.animationDuration = dur+'s';
+    s.style.animationDelay = (-Math.random()*dur)+'s';
+    s.style.setProperty('--o', (0.10 + Math.random()*0.14).toFixed(2));
+    s.style.setProperty('--r', (Math.random()>.5?'':'-') + (60+Math.random()*200|0) + 'deg');
+    rain.appendChild(s);
+  }
+})();
+</script>
+</body>
+</html>
